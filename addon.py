@@ -2,7 +2,7 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-BACKUP-URL = "https://economicupdate.libsyn.com/rss"
+#BACKUP-URL = "https://economicupdate.libsyn.com/rss"
 URL0 = "https://feed.podbean.com/economicupdate/feed.xml"
 
 @plugin.route('/')
