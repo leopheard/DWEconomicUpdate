@@ -10,7 +10,8 @@ def get_soup(URL0):
     soup = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup))
     return soup
-get_soup("https://economicupdate.libsyn.com/rss")
+get_soup("https://feed.podbean.com/economicupdate/feed.xml")
+BACKUP("https://economicupdate.libsyn.com/rss")
 
 
 def get_playable_podcast(soup):

@@ -2,7 +2,8 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-URL0 = "https://economicupdate.libsyn.com/rss"
+BACKUP-URL = "https://economicupdate.libsyn.com/rss"
+URL0 = "https://feed.podbean.com/economicupdate/feed.xml"
 
 @plugin.route('/')
 def main_menu():
