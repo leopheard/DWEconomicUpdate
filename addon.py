@@ -24,9 +24,6 @@ def main_menu():
 
 @plugin.route('/all_episodes/')
 def all_episodes():
-    """
-    contains playable podcasts listed as just-in
-    """
     soup = mainaddon.get_soup(URL0)
     playable_podcast = mainaddon.get_playable_podcast(soup)
     items = mainaddon.compile_playable_podcast(playable_podcast)
@@ -34,12 +31,9 @@ def all_episodes():
 
 @plugin.route('/latest_episodes/')
 def latest_episodes():
-    """
-    contains playable podcasts listed as just-in
-    """
     soup = mainaddon.get_soup(URL0)
-    playable_podcast = mainaddon.get_playable_podcast(soup)
-    items = mainaddon.compile_playable_podcast(playable_podcast)
+    playable_podcast1 = mainaddon.get_playable_podcast1(soup)
+    items = mainaddon.compile_playable_podcast1(playable_podcast1)
     return items
 
 if __name__ == '__main__':
